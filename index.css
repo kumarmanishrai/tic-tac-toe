@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.html{
+    font-size: 10px;
+}
+
+.container{
+    margin: 4rem auto;
+    padding: 2.4rem;
+    /* background-color: red; */
+    /* display: none; */
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.box{
+    position: relative;
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: rgb(5, 172, 238);
+    margin: 0.2rem;
+    border-radius: 0.6rem;
+    transition: 0.3s;
+    font-size: 220%;
+    color: #fff;
+    font-weight: bold;
+}
+
+.box:hover{
+    background-color: rgb(0, 255, 0);
+}
+
+.box:hover .cross-zero{
+    color: black;
+}
+
+.cross-zero{
+    position: relative;
+    font-size: 6rem;
+    color: #fff;
+    font-weight: bold;
+    margin: 14% 30%;
+}
+
+#display{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 1rem auto;
+    color: rgb(7, 167, 7);
+}
+
+
+
+
+/* result container css */
+
+.resultContainer{
+    width: 60vw;
+    height: 74vh;
+    background-color: rgb(127, 240, 255);
+    position: absolute;
+    top: 8vh;
+    bottom: 18vh;
+    left: 20vw;
+    right: 20vw;
+    border-radius: 1.2rem;
+    opacity: 80%;
+
+    display: none;
+
+}
+
+
+#btnReset{
+    width: 12rem;
+    height: 6rem;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: chocolate;
+    opacity: 100%;
+    
+}
+
+
+/* media query */
+
+@media only screen and (max-width: 816px) {
+    .container{
+        /* background-color: yellow; */
+    }
+    .box{
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    .cross-zero{
+        font-size: 5rem;
+        margin-top: 6%;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    .container{
+        /* background-color: rgb(0, 255, 21); */
+    }
+    .box{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    .cross-zero{
+        font-size: 4rem;
+        margin-top: 6%;
+    }
+}
+
+
+
